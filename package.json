@@ -1,5 +1,5 @@
 {
-  "name": "stackdriver-logger",
+  "name": "@BluecapMining/stackdriver-logger",
   "version": "1.0.0",
   "description": "logging module providing client interface with stackdriver",
   "main": "index.js",

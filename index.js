@@ -4,7 +4,7 @@ const path = require('path');
 
 const logging = new Logging({
   projectId: process.env.PROJECT_ID,
-  keyFilename: path.resolve(__dirname, '..', 'stackdriver_service.json'),
+  keyFilename: path.resolve(__dirname, '../..', 'stackdriver_service.json'),
 });
 
 class Logger {
