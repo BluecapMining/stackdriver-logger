@@ -2,16 +2,17 @@ require('dotenv').config();
 const Logging = require('@google-cloud/logging');
 const path = require('path');
 
-const logging = new Logging({
-  projectId: process.env.PROJECT_ID,
-  keyFilename: path.resolve(__dirname, '../..', 'stackdriver_service.json'),
-});
-
 class Logger {
-  constructor({ logName, metadata, workerId }) {
+  constructor({ logName, metadata, workerId, projectId, keyFilename }) {
     this.logName = logName || 'default';
     this.metadata = metadata || { resource: { type: 'global' } };
     this.workerId = workerId;
+
+    const logging = new Logging({
+      projectId: projectId,
+      keyFilename: keyFilename,
+    });
+
     this.log = logging.log(logName);
   }
 
