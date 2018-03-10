@@ -7,6 +7,12 @@ class Logger {
     this.logName = logName || 'default';
     this.metadata = metadata || { resource: { type: 'global' } };
     this.workerId = workerId;
+    this.labels = {
+      DEPLOYMENT: 'DEPLOYMENT',
+      DATA_UPDATE: 'DATA_UPDATE',
+      START: 'START',
+      CRASH: 'CRASH',
+    };
 
     const logging = new Logging({
       projectId: projectId,
