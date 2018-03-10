@@ -58,6 +58,17 @@ class Logger {
     const entries = await this.log.getEntries(options);
     return entries;
   }
+
+  /**
+   * @function
+   * @param {labelName} - label name
+   * @return {label}
+   * @description - Get a valid label name from constant list
+   */
+
+   async getLabel(labelName) {
+     return this.labels[labelName] || false;
+   }
 }
 
 module.exports = Logger;
