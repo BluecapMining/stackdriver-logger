@@ -4,13 +4,15 @@ const path = require('path');
 
 class Logger {
   constructor({ logName, metadata, workerId, projectId, keyFilename }) {
-    this.logName = logName || 'default';
     this.metadata = metadata || { resource: { type: 'global' } };
     this.workerId = workerId;
+    this.projectId = projectId;
     this.labels = {
       DEPLOYMENT: 'DEPLOYMENT',
       DATA_UPDATE: 'DATA_UPDATE',
       START: 'START',
+      DELAYED: 'DELAYED',
+      OFFLINE: 'OFFLINE',
       CRASH: 'CRASH',
     };
 
@@ -19,7 +21,8 @@ class Logger {
       keyFilename: keyFilename,
     });
 
-    this.log = logging.log(logName);
+    this.log = logging.log(logName || 'default');
+    this.logName = this.log.formattedName_;    
   }
 
   /**
@@ -54,12 +57,15 @@ class Logger {
    * @return {promise}
    * @description - Get all log entries. Optionally pass in ordering filter
    */
-  async getEntries(logName = null, options = { orderBy: 'timestamp desc' }) {
-    if (!logName) {
+  async getEntries(providedLogName = null, options = { orderBy: 'timestamp desc' }) {
+    let logName;
+    if (!providedLogName) {
       logName = this.logName;
+    } else {
+      logName = this.constructor.formatName(this.projectId, providedLogName);
     }
     options = Object.assign(options, {
-      filter: 'logName="' + this.logName + '"',
+      filter: 'logName="' + logName + '"',
     });
 
     const entries = await this.log.getEntries(options);
@@ -74,8 +80,20 @@ class Logger {
    */
 
   getLabel(labelName) {
-     return this.labels[labelName] || false;
-   }
+    return this.labels[labelName] || false;
+  }
+
+  static formatName(projectId, name) {
+    var path = 'projects/' + projectId + '/logs/';
+    name = name.replace(path, '');
+
+    if (decodeURIComponent(name) === name) {
+      // The name has not been encoded yet.
+      name = encodeURIComponent(name);
+    }
+
+    return path + name;
+  }; 
 }
 
 module.exports = Logger;
