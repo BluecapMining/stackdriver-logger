@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cryptotrackersystem",
+  "private_key_id": "e4045df7eccceb95de802af18298eae40c498a40",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQD2wQCt0gMWZl0T\nxaCqo2IhMvRnO1dyZvwrEo/19ANuBeGq9FFQuPqUQ5EbwJaIAjong7HX02G4vkbM\nr+dsE2wzfCvFWPJj9YvPNtsrf2JITU7tEUq+OHg39geKb0lFrC0hC7q/SdLcxPy0\nbtl4BfWsLGPa7Q4RaH84HFzNNZUWGtl1iHJQ9kJ8U+zQubDxyneKopQSnosr0K4r\nBpHLNCBcuxvBuSxPy86NSF6JsEZGpw74xQG54zBGfcEeCv0R6s6hIqCagtLzz8pa\nLkSpGG5+up7Rnvh37h1TIzjePc4tXCt/l+D1X2WwLZhbnzjdCqfI6uzOCmLFu75A\nOcIBxugFAgMBAAECggEAVjWuOAyEuaG/6TWF4bg9g53a1+pargSfG6lblLHRNPJn\nGqRLeKl4Gq7Ult6deR1WFhIj42Td4n7QG5llgFP03LQIUuW1ogja9OWUg0j5HIuu\nBJOjCnyOO/cAQXSKJAZ4qfAAKe7v9eP46k1EO3PRlnrX1Fg4LwrUT9VQ8v1Cfjrp\nl+08Wyo/sNeHVrOwVihUgg0BJZCs8cvkuGIPQxl5XKB9lJugL7gEzR74dg4AAzg/\nZrKhcOz118OYJT5DChlfBRidDOqdcorNSe+QfqgmDiMF6JJCmml6f2qQPldaXwNN\nRy/XCvuTqucM2kHg9HDxGdsE9bgSoq5fDeqmYQxfDQKBgQD9dk9PRZ1kbJzFP6GG\nBXC90ByjUsoBRoFetULILhkEmG2t9lOezP849eTicU71EcdxjtYbDD7/jgSRRrM0\nGpH+JFg7UyAdPZZEYSTtXUFrTSDq4p1OCdDshFhrFNaaxMI/VeHhRAf7ZdDxmz1y\n4RTkq5FaNr5NKcFuPJmwmHx3CwKBgQD5OX91h5QAspRTRM88n6rJs4eXyncCDvs6\nK1PUd9r7rXk4eT1zWxsntTLJgj5BIGNNmMd3RP+gh1pAXicir4qIY+3kX3YA19G/\nbq3spJg/k5MEM/dJzPrM6UF6P0AJ6eVxjVPxdkG6mxl4cDtdsFvM8c/JQWLG4QGS\nWEmPp1tHLwKBgQDvKQaW5zonOzEGEg+IVXPXNxr+pSzE3VFPGzwDhTPIGUhMwMSQ\ncCBXD/bEEGSPbBJEPaIbbYe4PbpjllGb1YJySrsSZ1JDJQy4Qu3EJ52F8QYhfGkv\n7KU9t3dyuvvwl74uYww7MaVSevUYNQJbdrTvPFBvzn3sc3z4VqgycP/olwKBgQDd\nJQkVl/VbXRrCfJdLWv6oNdbGeRB60iJYrmOXb7bvhjG/S82cU6ZX6LAlIJ3vGjcj\nfsLX8XDG1/Pck+80FwHdHpbUA2TpQJhMvoA0MKUsHN3iZ94xLWMKepvwRrmjUlmX\nFen7o4yVcdT7CtOSwc/jnlpbYdqtULEdU5wKjV0wXwKBgQDP0SkfdBXoSqxYU0gP\nKnF1narvBJGFSl61geiNRu47s7ihaxpW28IaSFiGZ3nFntM56f0T3sggAdmX/QJX\nsVIfm6ldV+O2mfy7Z9r/P0kSttS/kzbe2A/r1ltrWl+l64cjSJbh0IbqZctzBMig\n+wpfhAXuMxVAcKskW5GpZ+MUoA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "gatherer@cryptotrackersystem.iam.gserviceaccount.com",
+  "client_id": "113636154981129748084",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gatherer%40cryptotrackersystem.iam.gserviceaccount.com"
+}
