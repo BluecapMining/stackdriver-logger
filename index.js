@@ -62,9 +62,7 @@ class Logger {
       filter: 'logName="' + this.logName + '"',
     });
 
-    console.log(this.log)
     const entries = await this.log.getEntries(options);
-    console.log(entries)
     return entries;
   }
 
