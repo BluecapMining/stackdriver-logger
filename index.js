@@ -66,7 +66,7 @@ class Logger {
    * @description - Get a valid label name from constant list
    */
 
-   async getLabel(labelName) {
+  getLabel(labelName) {
      return this.labels[labelName] || false;
    }
 }
