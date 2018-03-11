@@ -54,7 +54,10 @@ class Logger {
    * @return {promise}
    * @description - Get all log entries. Optionally pass in ordering filter
    */
-  async getEntries(options = { orderBy: 'timestamp desc' }) {
+  async getEntries(logName = null, options = { orderBy: 'timestamp desc' }) {
+    if (!logName) {
+      logName = this.logName;
+    }
     options = Object.assign(options, {
       filter: 'logName="' + this.logName + '"',
     });
